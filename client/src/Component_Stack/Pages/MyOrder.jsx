@@ -42,30 +42,30 @@ export default function MyOrder() {
 
   return (
     <div>
-        <div className='rishimyorder-heading'>Your  Orders : </div>
-      <div className='rishicontainer' style={{paddingBottom : "100px"}}>
-        <div className='rishirow'>
+        <div className='ashishmyorder-heading'>Your  Orders : </div>
+      <div className='ashishcontainer' style={{paddingBottom : "100px"}}>
+        <div className='ashishrow'>
           {orderData.length > 0 ? (
             orderData.map((order, index) => (
-              <div className='rishicol-12 col-md-6 col-lg-3' key={index}>
+              <div className='ashishcol-12 col-md-6 col-lg-3' key={index}>
                 {order.order_data.map((item, itemIndex) => (
-                  <div className="rishiorder-card mt-3" key={itemIndex}>
+                  <div className="ashishorder-card mt-3" key={itemIndex}>
                     <img src={item.img} alt="Product" />
-                    <div className="rishiorder-details">
-                      <h5 className="rishiorder-title">{item.name}</h5>
-                      <div className='rishiorder-info'>
-                        <div className="rishiorder-quantity">Quantity: {item.qty}</div>
-                        <div className="rishiorder-span">Span: {item.span}</div>
-                        <div className="rishiorder-date">Order Date: {order.order_date}</div>
+                    <div className="ashishorder-details">
+                      <h5 className="ashishorder-title">{item.name}</h5>
+                      <div className='ashishorder-info'>
+                        <div className="ashishorder-quantity">Quantity: {item.qty}</div>
+                        <div className="ashishorder-span">Span: {item.span}</div>
+                        <div className="ashishorder-date">Order Date: {order.order_date}</div>
                       </div>
-                      <div className='rishiorder-price'> Price: ₹{item.price}/- </div>
+                      <div className='ashishorder-price'> Price: ₹{item.price}/- </div>
                     </div>
                   </div>
                 ))}
               </div>
             ))
           ) : (
-            <div className="rishino-order-data">No order data available</div>
+            <div className="ashishno-order-data">No order data available</div>
           )}
         </div>
       </div>

@@ -820,7 +820,7 @@ export const vehicle  = [
     },
     {
         "_id": "66de2d039e2ecba160ce5392",
-        "owneremail": "rishi0@gmail.com",
+        "owneremail": "ashish731824@gmail.com",
         "phone": "999-000-1111",
         "categoryName": "Cycle",
         "name": "Norco Sight",
