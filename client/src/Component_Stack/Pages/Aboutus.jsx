@@ -1,4 +1,4 @@
-import ashish from "../../assets/profiles/ashish.jpg";
+import ashish from "../../assets/profiles/ashish.png";
 import { useContext } from "react";
 import {AuthenticationContext} from "../../Context/Authentication";
 
